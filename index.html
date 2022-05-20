@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    height: {
+                        '100': '45rem',
+                        '99': '42rem',
+                    },
+                    width: {
+                        '100': '90%'
+                    },
+                    minHeight: {
+                        '100': '34rem',
+                        '98': '28rem',
+                        '190': '19rem'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-family: sans-serif;
+                font-size: 14px;
+            }
+        }
+      </style>
+    <title>Codegram</title>
+</head>
+<body class="bg-white sm:bg-zinc-50 w-full min-h-screen m-auto p-0 flex justify-center">
+    <div class="flex items-center justify-center sm:justify-start sm:w-11/12 lg:w-3/5 h-screen gap-4">
+        <div class="flex items-center justify-center w-1/2 hidden sm:flex">
+            <img class="md:h-100 sm:h-99 min-w-3/5 w-full" src="./img/instagram-celular.png" alt="celular">
+        </div>
+        <div class="flex items-center justify-around flex-col w-full sm:w-1/2 min-h-100">
+            <div class="flex justify-between items-center flex-col bg-white w-full py-4 px-0 border border-transparent sm:border-zinc-300 min-h-190 mb-4">
+                <img src="./img/instagram-logo.png" class="h-12" alt="instagram logo">
+                <div class="flex justify-center rounded-full overflow-hidden">
+                    <img class="h-24" src="https://scontent.fcfc4-1.fna.fbcdn.net/v/t39.30808-6/277355555_5028106627242656_5608978604262141894_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEiRhzApu0Xz0_QS7yfHhOgnsZHBnHBWuiexkcGccFa6M3YIWj0eCW8gUXe23-wiAl51TNvFdru5ASheQRNPmTL&_nc_ohc=_R25E84b5OIAX_9-CWY&_nc_ht=scontent.fcfc4-1.fna&oh=00_AT_Zp5LxZ-tgkxuunccdAZhWWNJJmy0oYcPbBp8scqq8pw&oe=628BC74E" alt="foto de perfil">
+                </div>
+                <a href="#" class="bg-[#0095f6] text-white p-2 rounded-md">Continue como tfronn</a>
+                <a href="#" class="text-[#0095f6] mt-4">Remover conta</a>
+            </div>
+            <div class="flex justify-between items-center flex-col bg-white w-full py-6 px-0  border border-transparent sm:border-zinc-300">
+                <p class="text-[#a0a0a0]">Não é tfronn?</p>
+                <p class="text-[#a0a0a0]">
+                    <span class="text-[#0095f6]">Alternar contas</span>
+                    ou
+                    <span class="text-[#0095f6]">Inscreva-se</span>
+                </p>
+            </div>
+            <div class="flex flex-col items-center justify-center w-auto py-6 px-0">
+                <p class="get-app">Baixe o aplicativo</p>
+                <div class="flex w-full justify-evenly items-center p-4">
+                    <a href="#" class="bg-cover h-12 w-40">
+                        <img src="./img/apple-button.png" alt="apple store button">
+                    </a>
+                    <a href="#" class="bg-cover h-12 w-40">
+                        <img src="./img/googleplay-button.png" alt="google play store button">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
